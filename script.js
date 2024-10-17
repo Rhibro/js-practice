@@ -1,104 +1,82 @@
+// October 16
+
 // övning 1
-console.log('övning 1');
 
-let FirstName = 'Rhiannon';
+// let a = 12;
+// let b = 5;
 
-let LastName = 'Brönnimann';
+// let sum = a + b;
+// let differnce = a - b;
+// let product = a * b;
+// let quotient = a / b;
+// let remainder = parseInt(quotient);
 
-let age = 31 ;
+// console.log(sum);
+// console.log(differnce);
+// console.log(product);
+// console.log(quotient);
+// console.log(remainder);
+// // this is a simplified version below 
+// console.log(a + b);
+// console.log(a - b);
+// console.log(a * b);
+// console.log(a / b);
+// console.log(a % b);
 
-console.log(`Hello, my name is ${FirstName}, ${LastName} and I am ${age} years old` )
+// // övning 2 
 
-// övning 2
-console.log('övning 2');
+// let userTemp = prompt('please enter a temp in Celsius:');
 
-let a = 5;
-let b = 10;
+// let tempConverter = userTemp * 9/5 + 32; 
 
-console.log("a =", a , "b=", b)
+// console.log(`Temp in F: ${tempConverter}`);
 
-let temp = a;
-a = b;
-b = temp; 
+// // övning 3 
 
-console.log("a =", a , "b =", b)
+// let number1 = parseFloat(prompt('Enter the first number:'));
+// let number2 = parseFloat(prompt('Enter the second number:'));
 
-// övning 3
-console.log('övning 3');
+// if (number1 > number2) {
+//     console.log(`${number1} is larger than ${number2}`);
+// } else if (number2 > number1) {
+//     console.log(`${number2} is larger than ${number1}`);
+// } else {
+//     console.log(`${number1} and ${number2} are equal`);
+// }
+// // a simpler way to do it 
+// let num1 = prompt('Number 1');
+// let num2 = prompt('Number 2');
 
-let firstName = "Rhiannon ";
-let middleName = "Louise ";
-let lastName = "Brönnimann";
+// let result = num1 > num2 ? 'Nr1 is bigger than Nr2' :
+//              num1 < num2 ? 'Nr2 is bigger than Nr1' : 'numbers is equal';
 
-let fullName = firstName + middleName + lastName;
+// console.log(result); 
 
-console.log(fullName)
+// // övning 4
 
-// övning 4
-console.log('övning 4');
+// let userNum = parseFloat(prompt('Please enter a number:'));
 
-let radius = 5;
-const pi = Math.PI;
-let circumference = 2 * pi * radius;
-let area = pi * radius * radius;
+// if (userNum % 2 ===0){
+//     console.log(`${userNum} is an even number`);
+// }else {
+//     console.log(`${userNum} is an uneven number`);
+// }
 
-console.log('Radius =', radius);
-console.log('Circumference =', circumference);
-console.log('Area =', area);
+// // övning 5 
 
-// övning 5
-console.log('övning 5');
+// let age = parseInt(prompt('Enter your age:'));
+// let hasValidID = prompt('Do you have a valid ID? (yes/no)').toLowerCase() === 'yes';
 
-let num = 5;
-let string = 'string';
-let bool = true;
-let obj = { food: 'pizza', drink: 'pop'};
-let cows;
-let empty = null;
+// if (age >= 18 && hasValidID) {
+//     console.log("You are allowed to enter the club.");
+// } else {
+//     console.log("Sorry, you are not allowed to enter the club.");
+// }
 
-console.log(typeof num);
-console.log(typeof string);
-console.log(typeof bool);
-console.log(typeof obj);
-console.log(typeof cows);
-console.log(typeof empty);
+// // övning 6
 
-// övning 6
-console.log('övning 6');
-
-let x = '5';
-let y = 3;
-
-let formula = x + y; 
-
-console.log(formula);
-console.log(Number(x) + y);
-console.log( x * y );
-console.log(x / y);
-
-// övning 7
-console.log('övning 7');
-
-let userInput = prompt('write a value:');
-
-console.log(`Input: ${userInput}`);
-console.log('Type:', typeof userInput);
-
-if (!isNaN(userInput)) {
-    let convertValue = Number(userInput);
-
-    console.log(convertValue);
-    console.log(typeof convertValue);
-} else {
-    console.log('cannot be converted into a number');
-}
-
-// övning 8
-// let numOne = prompt('please enetr a number:');
-// let numTwo = prompt('please enetr a number:');
-
-// numOne = Number(numOne);
-// numTwo = Number(numTwo);
+// let numOne = parseInt(prompt('please enetr a number:'));
+// let numTwo = parseInt(prompt('please enetr a number:'));
 
 // if (isNaN(numOne) || isNaN(numTwo)) {
 //     console.log('please enter a number!');
@@ -129,39 +107,125 @@ if (!isNaN(userInput)) {
 //     }
 // }
 
+// // övning 7
 
+// let x = '10';
+// let y = 10;
 
-// övning 9
+// console.log('x == y', x == y);
+// console.log('x === y', x === y);
+// - x == y is true because '10' is coerced to the number 10 before comparison
+// - x === y is false because x is a string and y is a number, so they have different types
+
+// övning 8 
+
+// let userAge = parseInt(prompt('Please enter your age:'));
+
+// if (isNaN(userAge)) {
+//     console.log('please enter an valid number!');
+// } else if (userAge >= 13 && userAge <= 19 ) {
+//     console.log('You are a teenager!');
+// } else {
+//     console.log('You are NOT a teenager!')
+// }
+
+// övning 9 
+
+// let numOne = parseInt(prompt('Please the first number:'));
+// let numTwo = parseInt(prompt('Please the second number:'));
+// let numThree = parseInt(prompt('Please enter the third number:'));
+
+// let largest;
+
+// if (numOne >= numTwo && numOne >= numThree) {
+//     largest = numOne;
+// } else if (numTwo >= numOne && numTwo >= numThree) {
+//     largest = numTwo;
+// } else {
+//     largest = numThree;
+// }
+
+// console.log('The largest number is:', largest);
 
 // övning 10
 
+let passW = prompt('Please enter your password:');
+
+let isLongEnough = passW.length >= 8;
+let hasDigit = /\d/.test(passW);
+
+let validPass = isLongEnough && hasDigit;
+
+if (validPass) {
+    console.log('Valid Password');
+}else{
+    console.log('Password is not valid...');
+}
+
+// övning 11 
+
 // övning 11
 
-// övning 12
+// Function to check if a year is a leap year
+function isLeapYear(year) {
+    return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+}
 
-// övning 13
+// Ask the user to enter a year
+let year = parseInt(prompt('Enter a year:'));
 
-// övning 14
+// Check if the input is a valid number
+if (isNaN(year)) {
+    console.log("Please enter a valid year.");
+} else {
+    // Determine if it's a leap year and print the result
+    if (isLeapYear(year)) {
+        console.log(`${year} is a leap year.`);
+    } else {
+        console.log(`${year} is not a leap year.`);
+    }
+}
 
-// function checkAndConvert() {
-//     let userInput = prompt("Please enter a value:");
-//     let type = typeof userInput;
+// October 17
+// öving 1 
 
-//     console.log(`Original input: ${userInput}`);
-//     console.log(`Type: ${type}`);
+// let sentence = prompt('Please write a sentence:');
+// let upperCaseSentence = sentence.toUpperCase();
+// let lowerCaseSentence = sentence.toLowerCase();
 
-//     if (type === "string") {
-//         let numConversion = Number(userInput);
-//         console.log(`Converted to number: ${numConversion}`);
-//         console.log(`Is NaN: ${isNaN(numConversion)}`);
-//     } else if (type === "number") {
-//         console.log(`Converted to string: ${userInput.toString()}`);
-//     } else if (type === "boolean") {
-//         console.log(`Converted to string: ${userInput.toString()}`);
-//         console.log(`Converted to number: ${Number(userInput)}`);
-//     } else {
-//         console.log("The input is neither a string, number, nor boolean.");
-//     }
-// }
+// console.log(upperCaseSentence);
+// console.log(lowerCaseSentence);
 
-// checkAndConvert();
+//  övning 2 
+
+// let js = 'JavaScript';
+
+// let firstLetter = js.charAt(0);
+// let fourchar = js.slice(0, 4);
+
+// console.log(firstLetter);
+// console.log(fourchar);
+
+// övning 3
+
+// let userInput = prompt('please enter a list of words separated by a comma:');
+
+// let wordsArray = userInput.split(',');
+
+// console.log(wordsArray);
+
+// let joinedString = wordsArray.join(' ');
+
+// console.log(joinedString);
+
+// övning 4
+
+// let stringy = 'I love programming!';
+
+// let doesInclude = stringy.includes('progamming');
+// let Replace = stringy.replace('programming', 'JavaScript');
+
+// console.log(Replace);
+
+// övning 5 
+
