@@ -149,42 +149,74 @@
 
 // övning 10
 
-let passW = prompt('Please enter your password:');
 
-let isLongEnough = passW.length >= 8;
-let hasDigit = /\d/.test(passW);
-
-let validPass = isLongEnough && hasDigit;
-
-if (validPass) {
-    console.log('Valid Password');
-}else{
-    console.log('Password is not valid...');
-}
-
-// övning 11 
 
 // övning 11
 
 // Function to check if a year is a leap year
-function isLeapYear(year) {
-    return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
-}
+// function isLeapYear(year) {
+//     return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+// }
 
-// Ask the user to enter a year
-let year = parseInt(prompt('Enter a year:'));
+// // Ask the user to enter a year
+// let year = parseInt(prompt('Enter a year:'));
 
-// Check if the input is a valid number
-if (isNaN(year)) {
-    console.log("Please enter a valid year.");
-} else {
-    // Determine if it's a leap year and print the result
-    if (isLeapYear(year)) {
-        console.log(`${year} is a leap year.`);
-    } else {
-        console.log(`${year} is not a leap year.`);
+// // Check if the input is a valid number
+// if (isNaN(year)) {
+//     console.log("Please enter a valid year.");
+// } else {
+//     // Determine if it's a leap year and print the result
+//     if (isLeapYear(year)) {
+//         console.log(`${year} is a leap year.`);
+//     } else {
+//         console.log(`${year} is not a leap year.`);
+//     }
+// }
+
+// övning 12
+
+// let weight = Number(prompt('Please enter you weight:'));
+// let height = Number(prompt('Please enter you height:'));
+
+// let bmi = weight / (height * weight);
+
+// let category;
+// if (bmi < 18.5) {
+//   category = "Underweight";
+// } else if (bmi >= 18.5 && bmi < 25) {
+//   category = "Normal weight";
+// } else if (bmi >= 25 && bmi < 30) {
+//   category = "Overweight";
+// } else {
+//   category = "Obesity";
+// }
+// console.log("Your BMI is: " + bmi.toFixed(2));  // toFixed(2) limits to 2 decimal places
+// console.log("You are classified as: " + category);
+
+// övning 13 
+
+let values = [true, false];
+
+// Print the header for the truth table
+console.log("A\tB\tA && B\tA || B\t!A");
+
+// Loop through all combinations of A and B
+for (let i = 0; i < values.length; i++) {
+    for (let j = 0; j < values.length; j++) {
+        let A = values[i];
+        let B = values[j];
+
+        // Calculate the results for &&, ||, and ! operators
+        let andResult = A && B;
+        let orResult = A || B;
+        let notA = !A;
+
+        // Print the values and the results
+        console.log(A + "\t" + B + "\t" + andResult + "\t" + orResult + "\t" + notA);
     }
 }
+
+
 
 // October 17
 // öving 1 
